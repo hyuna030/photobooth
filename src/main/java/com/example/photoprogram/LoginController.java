@@ -49,7 +49,7 @@ public class LoginController {
 
 	            // 이미 이미지 URL이 존재하지 않을 때만 이미지 생성 요청
 	            if (existingImageUrl == null || existingImageUrl.isEmpty()) {
-	                String nodeJsServerUrl = "http://localhost:3001/generate-image";
+	                String nodeJsServerUrl = "https://finalpjbackend-01758c5118d1.herokuapp.com/generate-image";
 	                Map<String, Object> requestBody = new HashMap<>();
 	                requestBody.put("result", plantType);
 	                requestBody.put("phoneNumber", phoneNumber); // 요청 본문에 전화번호 추가
