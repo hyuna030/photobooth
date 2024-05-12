@@ -14,6 +14,16 @@
             background: white;
             z-index: 100; /* 확실히 모든 것 위에 있도록 */
         }
+        #fullscreenGif {
+            position: fixed; /* 전체 화면을 덮도록 고정 위치 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("images/colorloading.gif") no-repeat center center; /* GIF 파일 경로 */
+            background-size: cover; /* 전체 화면을 꽉 채우도록 */
+            z-index: 101; /* 다른 모든 요소보다 높은 z-index */
+        }
         #photoFrameContainer {
             position: relative;
             width: 600px;
@@ -65,6 +75,7 @@
 </head>
 <body>
 <div id="overlay"></div>
+<div id="fullscreenGif"></div>
     <div id="photoFrameContainer">
     <c:if test="${not empty imageBase64}">
         <!-- 같은 이미지를 사용하여 두 개의 div 생성 -->
