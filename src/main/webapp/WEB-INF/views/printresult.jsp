@@ -20,7 +20,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("images/colorloading.gif") no-repeat center center; /* GIF 파일 경로 */
+            background: url("images/nocolorloading.gif") no-repeat center center; /* GIF 파일 경로 */
             background-size: cover; /* 전체 화면을 꽉 채우도록 */
             z-index: 101; /* 다른 모든 요소보다 높은 z-index */
         }
